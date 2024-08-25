@@ -1,0 +1,32 @@
+---
+title: 'set up your own coding blog'
+publishedAt: '2025-01-01'
+summary: 'My blog was made with Next.js, using `pnpm create next-app` with a template which supports MDX including syntax highlighting.'
+---
+My blog was made with Next.js, using `pnpm create next-app` with a template which supports MDX including syntax highlighting.
+
+
+Create your own coding blog using [this template](https://vercel.com/templates/next.js/portfolio-starter-kit)
+
+Which supports syntax highlighting...
+
+```ts
+const add = (...args) => args.reduce((acc, curr) => acc + curr, 0);
+console.log('1+2=', add(1,2))
+console.log('1+2+3=', add(1,2,3))
+```
+## Why create a coding blog of your own?
+
+Starting a coding blog offers personal growth, professional development, and community engagement. Writing about programming deepens your knowledge, sharpens communication skills, and builds a portfolio that strengthens your personal brand. A well-curated blog sets you apart in job searches, opens networking opportunities, and can lead to collaborations.
+
+## So where do you start
+
+What does it take to get it set up?
+
+Well, follow the link above to start. It requires `git`, Node.js, and `pnpm`. Mak sure you have `git`. You can get `npm` by installing Node.js. I recommend installing something like node version manager for your operating system, e.g. `windows-nvm` or just `nvm` for linux should work, then you can change `node` version easily and install the `--lts` to get the latest supported `node` (which brings `npm` with it).
+
+Once you have `node` and `npm`, in the terminal, `npm i -g pnpm` to install pnpm globally so you can use `pnpm` anywhere.
+
+## MDX support - your codebase
+
+Storing content in `.mdx` files in a `git` repository makes it easy to organise and use git as a content management system - the content coexists with the code.
