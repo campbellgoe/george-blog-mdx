@@ -1,6 +1,6 @@
-# Portfolio Blog Starter
+# Blog Starter
 
-This is a porfolio site template complete with a blog. Includes:
+This is a site template complete with a blog. Includes:
 
 - MDX and Markdown support
 - Optimized for SEO (sitemap, robots, JSON-LD schema)
