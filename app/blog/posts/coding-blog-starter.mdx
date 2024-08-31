@@ -1,14 +1,20 @@
 ---
 title: 'set up your own coding blog'
-publishedAt: '2024-08-25'
+publishedAt: '2024-08-31'
 summary: 'My blog was made with Next.js, using `pnpm create next-app` with a template which supports MDX including syntax highlighting.'
 ---
 My blog was made with Next.js, using `pnpm create next-app` with a template which supports MDX including syntax highlighting.
 
 
-Create your own coding blog using [this template](https://vercel.com/templates/next.js/portfolio-starter-kit)
+Create your own coding blog using the [https://vercel.com/templates/next.js/portfolio-starter-kit](https://vercel.com/templates/next.js/portfolio-starter-kit) template.
 
-Which supports syntax highlighting...
+Make sure you have git and Node.js installed. You can install `pnpm` globally with `npm i -g pnpm` which is a fast package manager.
+
+To scaffold the next.js blog with MDX/syntax highlighting support, run:
+
+`pnpm create next-app --example https://github.com/vercel/examples/tree/main/solutions/blog blog`
+
+It supports syntax highlighting...
 
 ```ts
 const add = (...args) => args.reduce((acc, curr) => acc + curr, 0);
@@ -30,3 +36,15 @@ Once you have `node` and `npm`, in the terminal, `npm i -g pnpm` to install pnpm
 ## MDX support - your codebase
 
 Storing content in `.mdx` files in a `git` repository makes it easy to organise and use git as a content management system - the content coexists with the code.
+
+## Get started
+
+Read package.json and update dependencies as necessary.
+
+`pnpm run dev` - opens on localhost:3000 where you can view the website.
+
+You could do all of this with `npm` instead.
+
+## Deploying
+
+Add the project in vercel to deploy it or use AWS amplify, or some other way to deploy a Next.js app.
